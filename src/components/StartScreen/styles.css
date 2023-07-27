@@ -1,0 +1,102 @@
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    width: 40vw;
+    height: 100vh;
+  background: #D7582C;
+
+}
+
+.game-container__logo {
+    width: 60%;
+}
+
+.game-container__button {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    background: #FEFEFE;
+    border-radius: 1rem;
+    color: #383636;
+    margin-top: 8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.icon-container__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.6rem;
+    background: #FEFEFE;
+    border-radius: 0.8rem;
+    cursor: pointer;
+
+}
+
+.icon-container__icon:nth-of-type(3) {
+
+    background: #eec323;
+
+}
+
+.icon-container__icon svg[data-testid="PersonIcon"] {
+    color: #1f1e1e;
+
+}
+
+.icon-container__icon svg[data-testid="EmojiEventsIcon"] {
+    color: #eec323;
+}
+
+.icon-container__icon svg[data-testid="RedeemIcon"] {
+    color: white;
+}
+
+
+.icon-container__icon svg[data-testid="ShoppingCartIcon"] {
+    color: #3DA6F9;
+}
+
+.icon-container__icon svg[data-testid="SettingsIcon"] {
+    color: #1f1e1e;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    html, body {
+        overflow: hidden;
+    }
+
+    .game-container {
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-between;
+        background: #ff682f;
+
+
+
+    }
+
+    .game-container__logo {
+        margin-top: 1rem;
+    }
+
+    .icon-container__icon {
+        margin-bottom: 6rem;
+    }
+
+
+
+}
