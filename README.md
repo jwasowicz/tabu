@@ -1,7 +1,7 @@
-#eTABU Clone
+# eTABU Clone
 eTABU is a social game in which two teams alternate guessing passwords transmitted by a player who cannot use forbidden words or gestures. The original game is only available for phones, so I wanted to take on this challenge and created a project that is playable on all devices!
 
-##Technologies I've used:
+## Technologies I've used:
 Typescript + React + Redux
 
 ## What I'm planning to add:
