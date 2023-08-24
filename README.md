@@ -16,7 +16,7 @@ Typescript + React + Redux
 
 ## Netlify:
 ### Link:
-https://etabu.netlify.app/settings
+https://etabu.netlify.app/
 ## Installation:
 ```
 git clone https://github.com/Wasiak1234/etabu
