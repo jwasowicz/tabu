@@ -170,6 +170,10 @@ a:has(.round-content__button) {
     height: 100vh;
   }
 
+  .round-content__button {
+    bottom: 10%;
+  }
+
   .round_section-bottom__progress {
     margin: 0 6rem 0 6rem;
   }

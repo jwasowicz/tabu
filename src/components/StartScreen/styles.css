@@ -97,7 +97,6 @@ a:has(.game-container__button) {
   }
 }
 
-
 @media screen and (max-width: 600px) {
   .game-container__button {
     padding: 1.4rem;
