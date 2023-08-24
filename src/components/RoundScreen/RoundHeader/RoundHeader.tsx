@@ -1,17 +1,16 @@
-import RoundPauseButton from "./RoundPauseButton"
-import RoundSectionBottom from "./RoundSectionBottom"
-import RoundSectionTop from "./RoundSectionTop"
+import { FC } from "react";
+import RoundPauseButton from "./RoundPauseButton";
+import RoundSectionBottom from "./RoundSectionBottom";
+import RoundSectionTop from "./RoundSectionTop";
 
-
-
-const RoundHeader = () => {
+const RoundHeader: FC = () => {
   return (
     <header className="round-container__header">
-        <RoundSectionTop />
-        <RoundSectionBottom />
-        <RoundPauseButton />
+      <RoundSectionTop />
+      <RoundSectionBottom />
+      <RoundPauseButton />
     </header>
-  )
-}
+  );
+};
 
-export default RoundHeader
+export default RoundHeader;

@@ -5,7 +5,6 @@ interface Args {
 }
 
 export const useSetActive: Args = (activeElement, ulRef) => {
-
   const filterElement = useCallback(
     (liElements: Element[]) => {
       return liElements.filter((li) => li.textContent === activeElement);
@@ -16,13 +15,12 @@ export const useSetActive: Args = (activeElement, ulRef) => {
   useEffect(() => {
     const liElements = Array.from(ulRef.current?.children || []);
 
-      const filteredElement = filterElement(liElements);
+    const filteredElement = filterElement(liElements);
 
-      if (filteredElement.length > 0 && filteredElement) {
-        filteredElement.forEach((element) => element.classList.add("active"));
-      } else {
-          liElements[2].classList.add("active");
-      }
-
+    if (filteredElement.length > 0 && filteredElement) {
+      filteredElement.forEach((element) => element.classList.add("active"));
+    } else {
+      liElements[2].classList.add("active");
+    }
   }, [ulRef, filterElement]);
 };

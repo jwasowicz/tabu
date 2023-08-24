@@ -4,9 +4,8 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { useHelper } from "../../hooks/useHelper";
 import { filterSettings } from "../../utils/filterSettings";
 
-
 const SettingsTimer = () => {
-  const { timerSettings: timeSettings, roundTime: timeRound } = useHelper();
+  const { gameSettings: timeSettings, roundTime: timeRound } = useHelper();
 
   const timerSettings = filterSettings(timeSettings);
 
@@ -16,7 +15,9 @@ const SettingsTimer = () => {
 
   const checkNaN = () => {
     return (
-      !isNaN(limitFooter * 2 * (roundTime === 0 ? 0.5 : roundTime) + limitFooter / 2) && !isNaN(roundTime)
+      !isNaN(
+        limitFooter * 2 * (roundTime === 0 ? 0.5 : roundTime) + limitFooter / 2
+      ) && !isNaN(roundTime)
     );
   };
 

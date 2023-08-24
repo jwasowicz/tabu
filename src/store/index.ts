@@ -1,12 +1,14 @@
 import { combineReducers } from "@reduxjs/toolkit";
 import gameSettingsReducer from "../reducers/gameSettingsReducer";
-import timerSettingsReducer from "../reducers/timerSettingsReducer";
 import roundTimeReducer from "../reducers/roundTimeReducer";
 import pauseSettingsReducer from "../reducers/pauseSettingsReducer";
+import counterReducer from "../reducers/counterReducer";
+import statsReducer from "../reducers/statsReducers";
 
 export const appReducer = combineReducers({
-    gameSettings: gameSettingsReducer,
-    timerSettings: timerSettingsReducer,
-    roundTime: roundTimeReducer,
-    pauseSettings: pauseSettingsReducer
-})
+  gameSettings: gameSettingsReducer,
+  roundTime: roundTimeReducer,
+  pauseSettings: pauseSettingsReducer,
+  counter: counterReducer,
+  stats: statsReducer,
+});

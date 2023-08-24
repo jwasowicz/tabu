@@ -3,14 +3,18 @@ import { RefObject } from "react";
 type ListRef = RefObject<HTMLUListElement>;
 
 interface ReturnHelper {
-    categories: string[];
-    header: string | null | undefined;
-    limitHeader: string | null | undefined;
-    activeElementText: string | null | undefined
+  categories: string[];
+  header: string | null | undefined;
+  limitHeader: string | null | undefined;
+  activeElementText: string | null | undefined;
+  liElements: Element[];
 }
 
 interface Args {
-  (ulRef: ListRef, filterActiveElement: (liList: Element[]) => Element | undefined): ReturnHelper;
+  (
+    ulRef: ListRef,
+    filterActiveElement: (liList: Element[]) => Element | undefined
+  ): ReturnHelper;
 }
 
 export const settingsHelper: Args = (ulRef, filterActiveElement) => {
@@ -30,7 +34,5 @@ export const settingsHelper: Args = (ulRef, filterActiveElement) => {
 
   const activeElementText = filterActiveElement(liElements)?.textContent;
 
-  return {categories, header, limitHeader, activeElementText}
-
+  return { categories, header, limitHeader, activeElementText, liElements };
 };
-

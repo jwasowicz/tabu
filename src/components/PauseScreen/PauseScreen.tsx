@@ -1,27 +1,34 @@
 import PauseScreenButton from "./PauseScreenButton";
 import PauseScreenText from "./PauseScreenText";
-import ReportProblemIcon from '@mui/icons-material/ReportProblem';
+import ReportProblemIcon from "@mui/icons-material/ReportProblem";
 import Popup from "./Popup/Popup";
-import './styles.css';
+import "./styles.css";
 import { useHelper } from "../../hooks/useHelper";
 
 const PauseScreen = () => {
-
-  const { pauseSettings: {openedPopup}} = useHelper();
-
+  const {
+    pauseSettings: { openedPopup },
+  } = useHelper();
 
   return (
     <div className="pause-screen">
-        <PauseScreenButton open={true} text="Finish Game" />
-        <PauseScreenText color="white"/>
-        <PauseScreenButton margin={true} text="Rules" />
-        <PauseScreenButton text="Report this word" icon={ReportProblemIcon}/>
-        <PauseScreenButton open={true} text="Exit to menu"/>
+      <PauseScreenButton
+        open={true}
+        location="/end-screen"
+        text="Finish Game"
+      />
+      <PauseScreenText color="white" />
+      <PauseScreenButton location="" margin={true} text="Rules" />
+      <PauseScreenButton
+        location=""
+        text="Report this word"
+        icon={ReportProblemIcon}
+      />
+      <PauseScreenButton open={true} location="/" text="Exit to menu" />
 
-        {openedPopup && <Popup />}        
+      {openedPopup && <Popup />}
     </div>
-    
-  )
-}
+  );
+};
 
-export default PauseScreen
+export default PauseScreen;

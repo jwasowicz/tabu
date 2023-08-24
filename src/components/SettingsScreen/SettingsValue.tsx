@@ -1,19 +1,11 @@
-import {
-  FC,
-  MouseEvent,
-  Dispatch,
-  SetStateAction,
-  useRef,
-  useState,
-  useEffect,
-} from "react";
+import { FC, MouseEvent, Dispatch, SetStateAction, useRef } from "react";
 import { useSetActive } from "../../hooks/useSetActive";
 import { removeActiveClass } from "../../utils/removeActiveClass";
 import { secondsToMinutes } from "../../utils/timeConvert";
 import { useSaveSettings } from "../../hooks/useSaveSettings";
-import { useTimerSettings } from "../../hooks/useTimerSettings";
 import { useHelper } from "../../hooks/useHelper";
 import { setRoundTime } from "../../store/actions";
+import { settingsHelper } from "../../utils/settingsHelper";
 
 interface SettingsValueProps {
   setCategory?: Dispatch<SetStateAction<string>>;
@@ -32,13 +24,12 @@ const SettingsValue: FC<SettingsValueProps> = ({
 }): JSX.Element => {
   const listRef = useRef<HTMLUListElement>(null);
 
-  const { dispatch } = useHelper();
+  const { dispatch, roundTime, filterActiveElement } = useHelper();
 
-  const header =
-    listRef.current?.parentNode?.parentNode?.childNodes[0].childNodes[0]
-      .textContent;
-
-  const children = Array.from(listRef.current?.children || []);
+  const { header, liElements: children } = settingsHelper(
+    listRef,
+    filterActiveElement!
+  );
 
   const handleClick = (e: MouseEvent<HTMLLIElement>) => {
     const categories = ["Rounds", "Points", "None"];
@@ -49,9 +40,19 @@ const SettingsValue: FC<SettingsValueProps> = ({
     }
 
     if (header === "Round Time") {
-
-
-      dispatch(setRoundTime({ "Round Time": clickedElement.textContent! }));
+      dispatch(
+        setRoundTime({
+          ...roundTime,
+          "Round Time": clickedElement.textContent!,
+        })
+      );
+    } else if (header === "Skip Limit") {
+      dispatch(
+        setRoundTime({
+          ...roundTime,
+          "Skip Limit": clickedElement.textContent!,
+        })
+      );
     }
 
     removeActiveClass(children);
@@ -59,10 +60,8 @@ const SettingsValue: FC<SettingsValueProps> = ({
     clickedElement.classList.add("active");
   };
 
-
   useSetActive(activeElement, listRef);
   useSaveSettings(listRef, activeElement!);
-  useTimerSettings(listRef);
 
   return (
     <ul ref={listRef} className={limitValues ? "limit-values" : ""}>
@@ -73,7 +72,7 @@ const SettingsValue: FC<SettingsValueProps> = ({
           key={index}
         >
           {headerName === "Round Time"
-            ? secondsToMinutes(Number(element))
+            ? secondsToMinutes(Number(element), false)
             : element}
         </li>
       ))}

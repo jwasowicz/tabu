@@ -10,18 +10,28 @@ interface Props {
   text: string;
   margin?: boolean;
   icon?: OverridableComponent<SvgIconTypeMap>;
-  open?: boolean
+  open?: boolean;
+  location: string;
 }
 
-
-
-const PauseScreenButton: FC<Props> = ({ text, margin, icon, open }) => {
+const PauseScreenButton: FC<Props> = ({
+  text,
+  margin,
+  icon,
+  open,
+  location,
+}) => {
   const { pauseSettings, dispatch } = useHelper();
 
   const handleClick = () => {
-    if(open) {
-
-      dispatch(setPauseSettings({ ...pauseSettings, openedPopup: true }));
+    if (open) {
+      dispatch(
+        setPauseSettings({
+          ...pauseSettings,
+          openedPopup: true,
+          location: location,
+        })
+      );
     }
   };
 

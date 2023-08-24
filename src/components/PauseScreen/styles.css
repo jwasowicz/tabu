@@ -1,12 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
+
 .pause-screen {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin: calc(15% + 7rem) 0;
-
+  gap: 2vh;
+  margin: 27vh 0;
 }
 
 .game-button {
@@ -14,6 +15,7 @@
   align-items: center;
   width: 90%;
   padding: 1.3rem;
+  font-family: "Noto Sans", sans-serif;
   border-radius: 1rem;
   font-weight: bold;
   color: rgb(29, 29, 29);
@@ -29,20 +31,18 @@
   margin-top: 3rem;
   color: white;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
   font-size: 1.1rem;
-
 }
 
 .popup-mask {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 0;
-    animation: opacity-in .3s ease forwards;
-  
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  animation: opacity-in 0.3s ease forwards;
 }
 
 @keyframes opacity-in {
@@ -54,19 +54,18 @@
   }
 }
 
-
 .popup-container {
-    position: absolute;
-    background: white;
-    width: 90%;
-    height: 15rem;
-    border-radius: 0.7rem;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    animation: transformDown 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-
+  position: absolute;
+  background: white;
+  width: 85%;
+  height: 15rem;
+  border-radius: 0.7rem;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  animation: transformDown 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
 }
 
 @keyframes transformDown {
@@ -83,43 +82,59 @@
   }
 }
 
+.close {
+  animation: transformUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
 
+@keyframes transformUp {
+  0% {
+    top: 50%;
+  }
+
+  50% {
+    top: 40%;
+  }
+
+  100% {
+    top: 150%;
+  }
+}
 
 .popup-container__header {
-    position: absolute;
-    top: -1.5rem;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup-container__text-element {
-    width: 60%;
-    text-align: center;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    background: #4EA8FF;
+  width: 60%;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: #4ea8ff;
 }
 
 .popup-container__close-element {
-    position: absolute;
-    right: -0.7rem;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    padding: 0.5rem;
-    background: #F62858;
-    border-radius: 50%;
+  position: absolute;
+  right: -0.7rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  background: #f62858;
+  border-radius: 50%;
 }
 
 .popup-container__close-element svg {
-    color: white;
+  color: white;
 }
 
 .popup-container__content .pause-screen__info {
@@ -133,36 +148,67 @@
   margin-top: 2.5rem;
 }
 
-
-.buttons-container__button  {
-  padding: 1.2rem 3.5rem;
+.buttons-container__button {
+  padding: 1.2rem 15%;
   font-size: 1.1rem;
   font-weight: bold;
   border-radius: 1rem;
-  -webkit-box-shadow: 0px 5px 6px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 5px 6px 3px rgba(0,0,0,0.3);
-  box-shadow: 0px 5px 6px 3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-
 }
 
 .exit {
-  background: #F04A24;
+  background: #f04a24;
   color: white;
 }
 
 .return {
-  background: #E5E5E5;
-  color: #9E9E9E;
+  background: #e5e5e5;
+  color: #9e9e9e;
+}
+
+@media screen and (min-height: 650px) {
+  .pause-screen {
+    gap: 3.5vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-container {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-
-
-  .pause-screen {
-
-    margin: calc(15% + 10rem) 0;
+  .popup-container {
+    width: 75%;
   }
 
+  .buttons-container {
+    gap: 2rem;
+  }
+}
 
+
+
+@media screen and (max-width: 450px) {
+  .popup-container {
+    width: 90%;
+  }
+
+  .pause-screen {
+    margin: 26vh 0;
+    gap: 1.2rem;
+  }
+
+  .popup-container__content {
+    margin: 0 0.2rem;
+  }
+
+  .pause-screen__info {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
 }

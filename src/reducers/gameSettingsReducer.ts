@@ -6,10 +6,8 @@ interface State {
 
 const initialState: State = {
   gameSettings: {
-    "Skip Limit": "",
-    limitHeader: "",
-    limitFooter: ""
-
+    limitHeader: "Points",
+    limitFooter: "30",
   },
 };
 
@@ -21,7 +19,7 @@ const gameSettingsReducer = (
     case "UPDATE_GAME_SETTINGS":
       return {
         ...state,
-          ...action.payload,
+        ...action.payload,
       };
 
     default:

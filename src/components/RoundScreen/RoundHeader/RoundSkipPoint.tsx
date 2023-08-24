@@ -1,9 +1,11 @@
+import { FC } from "react";
 
-
-const RoundSkipPoint = () => {
-  return (
-    <h3 className="round_section-bottom__h3">0</h3>
-  )
+interface Props {
+  skipNumber: number;
 }
 
-export default RoundSkipPoint
+const RoundSkipPoint: FC<Props> = ({ skipNumber }) => {
+  return <h3 className="round_section-bottom__h3">{skipNumber}</h3>;
+};
+
+export default RoundSkipPoint;

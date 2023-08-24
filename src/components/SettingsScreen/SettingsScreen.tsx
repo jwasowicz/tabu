@@ -7,18 +7,16 @@ import "./styles.css";
 import SettingsButton from "./SettingsButton";
 import SettingsHeader from "./SettingsHeader";
 
-
-
 const SettingsScreen: FC = () => {
-
-
   return (
     <div className="settings-container">
       <SettingsHeader />
-      <SettingsSkipContainer />
-      <SettingsTimeContainer />
-      <SettingsLimitContainer />
-      <SettingsButton />
+      <div className="settings-container__elements">
+        <SettingsSkipContainer />
+        <SettingsTimeContainer />
+        <SettingsLimitContainer />
+        <SettingsButton />
+      </div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ export type RootState = {
 
 const SettingsButton = () => {
   return (
-    <Link to="/game-screen">
+    <Link to="/round-screen">
       <button className="settings-container__button">Play</button>
     </Link>
   );

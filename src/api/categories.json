@@ -1,0 +1,614 @@
+{
+  "mainCategories": [
+    {
+      "headerName": "Home",
+      "categories": [
+        "Living room",
+        "Kitchen",
+        "Bedroom",
+        "Bathroom",
+        "Garden"
+      ]
+    },
+    {
+      "headerName": "Geography",
+      "categories": [
+        "America",
+        "Europe",
+        "Africa",
+        "Asia",
+        "Australia"
+      ]
+    },
+    {
+      "headerName": "Christmas",
+      "categories": [
+        "Christmas tree",
+        "Presents",
+        "Santa Claus",
+        "Snow",
+        "Christmas Eve"
+      ]
+    },
+    {
+      "headerName": "Sea",
+      "categories": [
+        "Ocean",
+        "Beach",
+        "Waves",
+        "Water",
+        "Coral reef"
+      ]
+    },
+    {
+      "headerName": "Mountains",
+      "categories": [
+        "Alps",
+        "Himalayas",
+        "Andes",
+        "Peak",
+        "Climbing"
+      ]
+    },
+    {
+      "headerName": "Summer",
+      "categories": [
+        "Sun",
+        "Vacation",
+        "Heat",
+        "Relaxation",
+        "Beach"
+      ]
+    },
+    {
+      "headerName": "Forest",
+      "categories": [
+        "Trees",
+        "Thicket",
+        "Path",
+        "Animals",
+        "Leaves"
+      ]
+    },
+    {
+      "headerName": "Valley",
+      "categories": [
+        "Canyon",
+        "Nature",
+        "Stream",
+        "Landscape",
+        "Wildflowers"
+      ]
+    },
+    {
+      "headerName": "Island",
+      "categories": [
+        "Beach",
+        "Paradise",
+        "Exotic",
+        "Coconuts",
+        "Journey"
+      ]
+    },
+    {
+      "headerName": "Cold",
+      "categories": [
+        "Frost",
+        "Snow",
+        "Icy wind",
+        "Freezing",
+        "Frozen lake"
+      ]
+    },
+    {
+      "headerName": "Apartment",
+      "categories": [
+        "Tenants",
+        "Rental",
+        "Roommates",
+        "Decor",
+        "Neighbors"
+      ]
+    },
+    {
+      "headerName": "City",
+      "categories": [
+        "Skyscrapers",
+        "Crowd",
+        "Traffic",
+        "Streetlights",
+        "Subway"
+      ]
+    },
+    {
+      "headerName": "Desert",
+      "categories": [
+        "Sand",
+        "Oasis",
+        "Rock formations",
+        "Cacti",
+        "Sun"
+      ]
+    },
+    {
+      "headerName": "Village",
+      "categories": [
+        "Meadows",
+        "Cows",
+        "Cottage",
+        "Peace",
+        "Greenery"
+      ]
+    },
+    {
+      "headerName": "Peak",
+      "categories": [
+        "Climbing",
+        "Panorama",
+        "Horizon",
+        "View",
+        "Mountains"
+      ]
+    },
+    {
+      "headerName": "Moon",
+      "categories": [
+        "Night",
+        "Moonlight",
+        "Full moon",
+        "Cosmos",
+        "Night sky"
+      ]
+    },
+    {
+      "headerName": "Beach",
+      "categories": [
+        "Sand",
+        "Sea",
+        "Sun",
+        "Swim",
+        "Lounge chair"
+      ]
+    },
+    {
+      "headerName": "Coral reef",
+      "categories": [
+        "Underwater fauna",
+        "Colorful fish",
+        "Snorkeling",
+        "Underwater adventure",
+        "Ocean"
+      ]
+    },
+    {
+      "headerName": "Mountains",
+      "categories": [
+        "Alps",
+        "Himalayas",
+        "Andes",
+        "Peak",
+        "Climbing"
+      ]
+    },
+    {
+      "headerName": "Warmth",
+      "categories": [
+        "Sun",
+        "Hot air",
+        "Climate",
+        "Relaxation",
+        "Sunbathing"
+      ]
+    },
+    {
+      "headerName": "Precipitation",
+      "categories": [
+        "Rain",
+        "Snow",
+        "Hail",
+        "Sleet",
+        "Umbrella"
+      ]
+    },
+    {
+      "headerName": "Animals",
+      "categories": [
+        "Wild",
+        "Domestic",
+        "Zoo",
+        "Birds",
+        "Zoo"
+      ]
+    },
+    {
+      "headerName": "Landscape",
+      "categories": [
+        "Nature",
+        "Beauty",
+        "Picturesque",
+        "Greenery",
+        "Relaxation"
+      ]
+    },
+    {
+      "headerName": "Tradition",
+      "categories": [
+        "Culture",
+        "Rituals",
+        "Superstitions",
+        "Heritage",
+        "Generations"
+      ]
+    },
+    {
+      "headerName": "Holidays",
+      "categories": [
+        "Family",
+        "Gifts",
+        "Christmas Eve",
+        "Tradition",
+        "Joy"
+      ]
+    },
+    {
+      "headerName": "Decorations",
+      "categories": [
+        "Preparations",
+        "Ornaments",
+        "Beauty",
+        "Style",
+        "Creativity"
+      ]
+    },
+    {
+      "headerName": "Travel",
+      "categories": [
+        "Exploration",
+        "Adventure",
+        "New places",
+        "Map",
+        "Culture"
+      ]
+    },
+    {
+      "headerName": "Culture",
+      "categories": [
+        "Art",
+        "Music",
+        "Theater",
+        "Literature",
+        "Film"
+      ]
+    },
+    {
+      "headerName": "History",
+      "categories": [
+        "Past epochs",
+        "Events",
+        "Memory",
+        "Heritage",
+        "Monuments"
+      ]
+    },
+    {
+      "headerName": "Nature",
+      "categories": [
+        "Beauty",
+        "Environment",
+        "Ecosystem",
+        "Plants",
+        "Animals"
+      ]
+    },
+    {
+      "headerName": "Travel",
+      "categories": [
+        "Adventure",
+        "Exploration",
+        "Culture",
+        "Discovery",
+        "Map"
+      ]
+    },
+    {
+      "headerName": "Landscape",
+      "categories": [
+        "Nature",
+        "Beauty",
+        "Greenery",
+        "Relaxation",
+        "Picturesque place"
+      ]
+    },
+    {
+      "headerName": "Water",
+      "categories": [
+        "Ocean",
+        "Sea",
+        "River",
+        "Lake",
+        "Pool"
+      ]
+    },
+    {
+      "headerName": "Entertainment",
+      "categories": [
+        "Games",
+        "Film",
+        "Music",
+        "Enjoyment",
+        "Relaxation"
+      ]
+    },
+    {
+      "headerName": "Exploration",
+      "categories": [
+        "Discovery",
+        "Adventure",
+        "New places",
+        "Map",
+        "Journey"
+      ]
+    },
+    {
+      "headerName": "Travel",
+      "categories": [
+        "Culture",
+        "Exploration",
+        "Adventure",
+        "Discovery",
+        "New places"
+      ]
+    },
+    {
+      "headerName": "Culture",
+      "categories": [
+        "Music",
+        "Art",
+        "Film",
+        "Theater",
+        "Literature"
+      ]
+    },
+    {
+      "headerName": "History",
+      "categories": [
+        "Events",
+        "Past epochs",
+        "Memory",
+        "Heritage",
+        "Monuments"
+      ]
+    },
+    {
+      "headerName": "Nature",
+      "categories": [
+        "Beauty",
+        "Environment",
+        "Ecosystem",
+        "Plants",
+        "Animals"
+      ]
+    },
+    {
+      "headerName": "Travel",
+      "categories": [
+        "Adventure",
+        "Exploration",
+        "Map",
+        "Discovery",
+        "Culture"
+      ]
+    },
+    {
+      "headerName": "Sport",
+      "categories": [
+        "Physical activity",
+        "Competitions",
+        "Health",
+        "Movement",
+        "Competition"
+      ]
+    },
+    {
+      "headerName": "Culinary",
+      "categories": [
+        "Cooking",
+        "Recipes",
+        "Taste",
+        "Restaurant",
+        "Chef"
+      ]
+    },
+    {
+      "headerName": "Technology",
+      "categories": [
+        "Innovations",
+        "Progress",
+        "Gadgets",
+        "Computers",
+        "Industry"
+      ]
+    },
+    {
+      "headerName": "Science",
+      "categories": [
+        "Research",
+        "Discoveries",
+        "Experiments",
+        "Knowledge",
+        "Laboratory"
+      ]
+    },
+    {
+      "headerName": "Entertainment",
+      "categories": [
+        "Games",
+        "Music",
+        "Film",
+        "Enjoyment",
+        "Relaxation"
+      ]
+    },
+    {
+      "headerName": "Nature",
+      "categories": [
+        "Plants",
+        "Animals",
+        "Ecosystem",
+        "Balance",
+        "Biodiversity"
+      ]
+    },
+    {
+      "headerName": "Space",
+      "categories": [
+        "Stars",
+        "Planets",
+        "Moon",
+        "Telescope",
+        "Big Bang"
+      ]
+    },
+    {
+      "headerName": "Literature",
+      "categories": [
+        "Books",
+        "Novels",
+        "Poetry",
+        "Literary",
+        "Reading"
+      ]
+    },
+    {
+      "headerName": "Film",
+      "categories": [
+        "Cinema",
+        "Actors",
+        "Director",
+        "Script",
+        "Premiere"
+      ]
+    },
+    {
+      "headerName": "Music",
+      "categories": [
+        "Melody",
+        "Instruments",
+        "Concerts",
+        "Performers",
+        "Rhythm"
+      ]
+    },
+    {
+      "headerName": "Art",
+      "categories": [
+        "Painting",
+        "Sculpture",
+        "Exhibitions",
+        "Creativity",
+        "Inspiration"
+      ]
+    },
+    {
+      "headerName": "Travel",
+      "categories": [
+        "Exploration",
+        "Adventure",
+        "New places",
+        "Culture",
+        "Discovery"
+      ]
+    },
+    {
+      "headerName": "Travel",
+      "categories": [
+        "Culture",
+        "Exploration",
+        "Adventure",
+        "Discovery",
+        "New places"
+      ]
+    },
+    {
+      "headerName": "Culture",
+      "categories": [
+        "Music",
+        "Art",
+        "Film",
+        "Theater",
+        "Literature"
+      ]
+    },
+    {
+      "headerName": "History",
+      "categories": [
+        "Events",
+        "Past epochs",
+        "Memory",
+        "Heritage",
+        "Monuments"
+      ]
+    },
+    {
+      "headerName": "Nature",
+      "categories": [
+        "Beauty",
+        "Environment",
+        "Ecosystem",
+        "Plants",
+        "Animals"
+      ]
+    },
+    {
+      "headerName": "Travel",
+      "categories": [
+        "Culture",
+        "Exploration",
+        "Adventure",
+        "New places",
+        "Discovery"
+      ]
+    },
+    {
+      "headerName": "Travel",
+      "categories": [
+        "Culture",
+        "Exploration",
+        "Adventure",
+        "New places",
+        "Discovery"
+      ]
+    },
+    {
+      "headerName": "Culture",
+      "categories": [
+        "Film",
+        "Music",
+        "Art",
+        "Literature",
+        "Theater"
+      ]
+    },
+    {
+      "headerName": "History",
+      "categories": [
+        "Events",
+        "Past epochs",
+        "Memory",
+        "Heritage",
+        "Monuments"
+      ]
+    },
+    {
+      "headerName": "Nature",
+      "categories": [
+        "Beauty",
+        "Environment",
+        "Ecosystem",
+        "Plants",
+        "Animals"
+      ]
+    }
+  ]
+}

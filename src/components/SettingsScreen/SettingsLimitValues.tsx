@@ -4,10 +4,13 @@ import { useRender } from "../../hooks/useRender";
 
 interface SettingsLimitValuesI {
   elements: string[] | number[];
-  active: string | undefined
+  active: string | undefined;
 }
 
-const SettingsLimitValues: FC<SettingsLimitValuesI> = ({ elements, active }) => {
+const SettingsLimitValues: FC<SettingsLimitValuesI> = ({
+  elements,
+  active,
+}) => {
   const [category, setCategory] = useState("");
 
   return (

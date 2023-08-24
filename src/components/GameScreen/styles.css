@@ -1,0 +1,131 @@
+.game-screen {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  background: rgb(255, 194, 194);
+  position: relative;
+  overflow: hidden;
+  font-family: "Noto Sans", sans-serif;
+
+}
+
+.game-screen__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25vh;
+  width: 90%;
+  background: white;
+  height: 58%;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 9px 4px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 9px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 9px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.forward {
+  transform: translateX(110%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.backward {
+  transform: translateX(-110%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.game-screen__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5rem auto;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.game-screen__list * {
+  cursor: default;
+}
+
+.game-screen__list-header {
+  color: #656565;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.game-screen__list-element {
+  color: #9e9d9d;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.game-screen__button-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.game-screen__button {
+  padding: 0.6rem 2.2rem;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0px 9px 4px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 9px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 9px 4px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.game-screen__button:disabled {
+  cursor: default;
+}
+
+.game-screen__button svg {
+  transform: scale(1.3);
+}
+
+.game-screen__button svg[data-testid="CloseIcon"] {
+  color: #e44a6c;
+  stroke: #e44a6c;
+  stroke-width: 2.5;
+}
+
+.game-screen__button svg[data-testid="ReplayIcon"] {
+  color: #9e9d9d;
+  transform: rotateY(180deg) rotate(-60deg) scale(1.3);
+  stroke: #9e9d9d;
+  stroke-width: 1.5;
+}
+
+.game-screen__button svg[data-testid="CheckIcon"] {
+  color: #8bc44e;
+  stroke: #8bc44e;
+  stroke-width: 3;
+}
+
+@media screen and (max-width: 300px) {
+  
+  .game-screen__button {
+    padding: 0.6rem 1.8rem;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .game-screen {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .game-screen__card {
+    height: 55%;
+  }
+
+
+}

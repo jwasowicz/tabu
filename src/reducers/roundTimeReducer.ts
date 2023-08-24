@@ -1,14 +1,13 @@
 import { RoundTimeAction } from "../store/types";
 
 interface State {
-
-  'Round Time': string;
-
+  "Round Time": string;
+  "Skip Limit": string;
 }
 
 const initialState: State = {
-    'Round Time': '2:00',
-
+  "Round Time": "2:00",
+  "Skip Limit": "∞",
 };
 
 const roundTimeReducer = (
@@ -19,8 +18,8 @@ const roundTimeReducer = (
     case "SET_ROUND_TIME":
       return {
         ...state,
-          ...action.payload
-        }
+        ...action.payload,
+      };
     default:
       return state;
   }

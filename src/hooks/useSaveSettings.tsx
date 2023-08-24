@@ -9,20 +9,14 @@ interface Args {
 }
 
 export const useSaveSettings: Args = (ulRef) => {
-
   const { dispatch, gameSettings, filterActiveElement } = useHelper();
   const [settings, setSettings] = useState({ ...gameSettings });
 
   useEffect(() => {
     const { categories, header, activeElementText, limitHeader } =
-      settingsHelper(ulRef, filterActiveElement);
+      settingsHelper(ulRef, filterActiveElement!);
 
-    if (categories.includes(header!)) {
-      setSettings((prevSettings) => ({
-        ...prevSettings,
-        [header as keyof Settings]: activeElementText,
-      }));
-    } else {
+    if (!categories.includes(header!)) {
       setSettings((prevSettings: Settings) => ({
         ...prevSettings,
         limitHeader: limitHeader!,

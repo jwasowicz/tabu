@@ -1,102 +1,110 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 .game-container {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-around;
-    width: 40vw;
-    height: 100vh;
-  background: #D7582C;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vw;
+  height: 100vh;
+  background: #ff682f;
+  
 }
 
 .game-container__logo {
-    width: 60%;
+  width: 60%;
+}
+
+a:has(.game-container__button) {
+  margin-top: 8rem;
 }
 
 .game-container__button {
-    padding: 1.5rem;
-    font-size: 1.3rem;
-    background: #FEFEFE;
-    border-radius: 1rem;
-    color: #383636;
-    margin-top: 8rem;
-    font-weight: bold;
-    cursor: pointer;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif;
+  background: #fefefe;
+  border-radius: 1rem;
+  color: #383636;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 .icons-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    gap: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 .icon-container__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 0.6rem;
-    background: #FEFEFE;
-    border-radius: 0.8rem;
-    cursor: pointer;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.6rem;
+  background: #fefefe;
+  border-radius: 0.8rem;
+  cursor: pointer;
 }
 
 .icon-container__icon:nth-of-type(3) {
-
-    background: #eec323;
-
+  background: #eec323;
 }
 
 .icon-container__icon svg[data-testid="PersonIcon"] {
-    color: #1f1e1e;
-
+  color: #1f1e1e;
 }
 
 .icon-container__icon svg[data-testid="EmojiEventsIcon"] {
-    color: #eec323;
+  color: #eec323;
 }
 
 .icon-container__icon svg[data-testid="RedeemIcon"] {
-    color: white;
+  color: white;
 }
 
-
 .icon-container__icon svg[data-testid="ShoppingCartIcon"] {
-    color: #3DA6F9;
+  color: #3da6f9;
 }
 
 .icon-container__icon svg[data-testid="SettingsIcon"] {
-    color: #1f1e1e;
-
+  color: #1f1e1e;
 }
 
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow: hidden;
+  }
 
-    html, body {
-        overflow: hidden;
-    }
+  .game-container {
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    background: #ff682f;
+  }
 
-    .game-container {
-        width: 100vw;
-        height: 100vh;
-        justify-content: space-between;
-        background: #ff682f;
+  .game-container__logo {
+    margin-top: 1rem;
+  }
 
-
-
-    }
-
-    .game-container__logo {
-        margin-top: 1rem;
-    }
-
-    .icon-container__icon {
-        margin-bottom: 6rem;
-    }
-
-
-
+  .icon-container__icon {
+    margin-bottom: 6rem;
+  }
 }
+
+@media screen and (max-width: 600px) {
+  .game-container__button {
+    padding: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .game-container__button {
+      padding: 1.3rem;
+    }
+  }
+  

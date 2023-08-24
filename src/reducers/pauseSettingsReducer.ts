@@ -1,14 +1,16 @@
 import { PauseSettings, PauseSettingsAction } from "../store/types";
 
-
 export interface PauseState {
-  pauseSettings: PauseSettings
+  pauseSettings: PauseSettings;
 }
 
 const initialState: PauseState = {
   pauseSettings: {
     gamePause: false,
     openedPopup: false,
+    openedGameScreen: false,
+    animationStart: false,
+    location: "",
   },
 };
 
