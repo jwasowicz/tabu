@@ -178,6 +178,12 @@
   border-top: 0 solid transparent;
 }
 
+@media screen and (min-height: 650px) {
+  .end-screen__card-container {
+    height: 83vh;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .end-screen__container {
     width: 100vw;
