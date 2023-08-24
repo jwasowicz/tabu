@@ -11,9 +11,16 @@ Typescript + React + Redux
     - Create components for each of start icons
     - Add animations and improve existed
     - Create a component that clearly explains the rules of the game
-    - Add ability to change interface language and tabs
+    - Add ability to change interface language and cards
+    - Add more cards and categories
 
 ## Netlify:
 ### Link:
-
+https://etabu.netlify.app/settings
 ## Installation:
+```
+git clone https://github.com/Wasiak1234/etabu
+cd etabuproject
+npm install
+npm start
+```
