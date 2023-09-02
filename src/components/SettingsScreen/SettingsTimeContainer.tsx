@@ -8,7 +8,7 @@ const SettingsTimeContainer = () => {
     <SettingsContainer
       active="2:00"
       headerName={t("Round Time")}
-      elements={[30, 60, 120, 180, 300]}
+      elements={[15, 60, 120, 180, 300]}
     />
   );
 };
