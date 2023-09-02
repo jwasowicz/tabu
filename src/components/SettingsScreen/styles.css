@@ -132,6 +132,7 @@ a:has(.settings-container__button) {
 a:has(.settings-container__button--back) {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .settings-container__button--back {
