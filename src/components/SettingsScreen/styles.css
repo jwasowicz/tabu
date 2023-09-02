@@ -131,19 +131,22 @@ a:has(.settings-container__button) {
 
 a:has(.settings-container__button--back) {
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 0;
 }
 
 .settings-container__button--back {
   position: absolute;
   left: 0;
-  border-radius: 0 0.5rem 0.5rem 0;
-  padding: 0.4rem 1rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+  padding: 0.5rem 1rem;
   margin: 0.3rem 0;
   cursor: pointer;
+}
+
+.settings-container__button--back svg {
+  color: #ff682f;
+  stroke: #ff682f;
+  stroke-width: 2.5;
 }
 
 .spinner {

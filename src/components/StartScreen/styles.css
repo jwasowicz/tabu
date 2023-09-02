@@ -8,6 +8,7 @@
   width: 50vw;
   height: 100vh;
   background: #ff682f;
+  position: absolute;
   
 }
 
@@ -48,6 +49,7 @@ a:has(.game-container__button) {
   padding: 0.5rem 0.6rem;
   background: #fefefe;
   border-radius: 0.8rem;
+
   cursor: pointer;
 }
 
@@ -75,6 +77,24 @@ a:has(.game-container__button) {
   color: #1f1e1e;
 }
 
+.rotate {
+  animation: rotateSettingsIcon 1s ease-in-out forwards;
+}
+
+@keyframes rotateSettingsIcon {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-height: 650px) {
+  
+}
+
 @media screen and (max-width: 768px) {
   html,
   body {
@@ -92,8 +112,13 @@ a:has(.game-container__button) {
     margin-top: 1rem;
   }
 
+  .game-container__button {
+    margin-bottom: 6vh;
+  }
+
+
   .icon-container__icon {
-    margin-bottom: 6rem;
+    margin-bottom: 10vh;
   }
 }
 
