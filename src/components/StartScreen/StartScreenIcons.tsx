@@ -9,11 +9,11 @@ import { FC } from "react";
 const StartScreenIcons: FC = () => {
   return (
     <div className="icons-container">
-      <StartIcon icon={PersonIcon} />
-      <StartIcon icon={EmojiEventsIcon} />
-      <StartIcon icon={RedeemIcon} />
-      <StartIcon icon={ShoppingCartIcon} />
-      <StartIcon icon={SettingsIcon} />
+      <StartIcon icon={PersonIcon} type="Profile" />
+      <StartIcon icon={EmojiEventsIcon} type="Achievements" />
+      <StartIcon icon={RedeemIcon} type="Bonus" />
+      <StartIcon icon={ShoppingCartIcon} type="Shop" />
+      <StartIcon icon={SettingsIcon} type="Settings" />
     </div>
   );
 };

@@ -8,6 +8,7 @@ import { store } from "./store/store";
 import RoundScreen from "./components/RoundScreen/RoundScreen";
 import GameScreen from "./components/GameScreen/GameScreen";
 import EndScreen from "./components/EndScreen/EndScreen";
+import './i18n.ts';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

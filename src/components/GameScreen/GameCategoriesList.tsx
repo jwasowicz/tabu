@@ -1,12 +1,16 @@
 import GameCategory from "./GameCategory";
-import data from "../../api/categories.json";
+import dataGB from "../../api/categoriesGB.json";
+import dataPL from "../../api/categoriesPL.json";
 import { FC } from "react";
 import { useHelper } from "../../hooks/useHelper";
 
 const GameCategoriesList: FC = () => {
   const {
     counter: { randomIndex },
+    options: {cardsLanguage}
   } = useHelper();
+
+  const data = cardsLanguage === "PL" ? dataPL : dataGB;
 
   return (
     <ul className="game-screen__list">

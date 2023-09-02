@@ -3,23 +3,26 @@ import { useHelper } from "../../../hooks/useHelper";
 import { setPauseSettings } from "../../../store/actions";
 import { useNavigate } from "react-router-dom";
 import { resetSettings } from "../../../utils/resetSettings";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   text: string;
 }
 
 const PopupButton: FC<Props> = ({ text }) => {
-  const { pauseSettings, dispatch, counter, gameSettings, roundTime, stats } =
+  const { pauseSettings, dispatch, counter, gameSettings, roundTime, stats, options } =
     useHelper();
 
   const buttonRef = useRef<HTMLButtonElement | null>(null);
+
+  const { t } = useTranslation();
 
   const { location } = pauseSettings;
 
   const navigate = useNavigate();
 
   const handleClick = () => {
-    if (text === "No") {
+    if (text === t("No")) {
       dispatch(setPauseSettings({ ...pauseSettings, animationStart: true }));
       setTimeout(() => {
         dispatch(
@@ -30,7 +33,7 @@ const PopupButton: FC<Props> = ({ text }) => {
           })
         );
       }, 550);
-    } else {
+    } else if(text === t("Yes")) {
       dispatch(setPauseSettings({ ...pauseSettings, animationStart: true }));
 
       setTimeout(() => {
@@ -42,6 +45,7 @@ const PopupButton: FC<Props> = ({ text }) => {
             gameSettings,
             roundTime,
             stats,
+            options
           });
         navigate(location);
       }, 400);
@@ -53,7 +57,7 @@ const PopupButton: FC<Props> = ({ text }) => {
       ref={buttonRef}
       onClick={handleClick}
       className={`buttons-container__button ${
-        text === "Yes" ? "exit" : "return"
+        text === t("Yes") ? "exit" : "return"
       }`}
     >
       {text}

@@ -1,6 +1,6 @@
 import { Counter, CounterAction } from "../store/types";
 
-import data from "../api/categories.json";
+import data from "../api/categoriesGB.json";
 
 const { mainCategories } = data;
 

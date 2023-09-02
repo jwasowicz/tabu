@@ -1,7 +1,8 @@
 import { setCounter, setStats } from "../store/actions";
 import { Counter, Stats } from "../store/types";
 
-import data from "../api/categories.json";
+import dataGB from "../api/categoriesGB.json";
+import dataPL from "../api/categoriesPL.json";
 import { DispatchActions } from "../hooks/useHelper";
 import { secondsToMinutes } from "./timeConvert";
 
@@ -10,6 +11,7 @@ interface Args {
   counter: Counter;
   dispatch: DispatchActions;
   action?: string;
+  cardsLanguage: string;
 }
 
 export const switchAction = ({
@@ -17,10 +19,14 @@ export const switchAction = ({
   counter,
   dispatch,
   action,
+  cardsLanguage,
 }: Args) => {
-  const { mainCategories } = data;
+  const { mainCategories: GB } = dataGB;
+  const { mainCategories: PL } = dataPL;
 
-  const randomIndex = Math.floor(Math.random() * mainCategories.length);
+  const randomIndex = Math.floor(
+    Math.random() * (cardsLanguage === "PL" ? PL.length : GB.length)
+  );
 
   const {
     counterBlueMinus,

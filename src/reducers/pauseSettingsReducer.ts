@@ -12,6 +12,7 @@ const initialState: PauseState = {
     animationStart: false,
     location: "",
   },
+
 };
 
 export const pauseSettingsReducer = (

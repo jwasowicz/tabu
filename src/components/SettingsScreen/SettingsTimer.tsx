@@ -3,9 +3,11 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 import { useHelper } from "../../hooks/useHelper";
 import { filterSettings } from "../../utils/filterSettings";
+import { useTranslation } from "react-i18next";
 
 const SettingsTimer = () => {
   const { gameSettings: timeSettings, roundTime: timeRound } = useHelper();
+  const { t } = useTranslation();
 
   const timerSettings = filterSettings(timeSettings);
 
@@ -26,9 +28,9 @@ const SettingsTimer = () => {
       <SettingsIcon icon={AccessTimeIcon} />
       <h3 className="settings-container_h3">
         ~{" "}
-        {limitHeader === "Points"
+        {limitHeader === t("Points")
           ? `${limitFooter}'`
-          : limitHeader === "None"
+          : limitHeader === t("None")
           ? "∞"
           : `${
               checkNaN()

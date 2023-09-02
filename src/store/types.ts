@@ -2,6 +2,7 @@ import { Action } from "@reduxjs/toolkit";
 import { PauseState } from "../reducers/pauseSettingsReducer";
 import { CounterState } from "../reducers/counterReducer";
 import { StatsState } from "../reducers/statsReducers";
+import { OptionsState } from "../reducers/optionsSettingsReducer";
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~
    Settings
@@ -122,4 +123,30 @@ export type StatsAction = UpdateStatsAction;
 
 export type StatsRoot = {
   stats: StatsState;
+};
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~
+   OptionsSettings
+   ~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+export interface OptionsSettings {
+  clickedIcon: boolean;
+  iconType: string;
+  animationOptionStart: boolean;
+  soundsOptionChecked: boolean;
+  notificationsOptionChecked: boolean;
+  cardsLanguage: string;
+  interfaceLanguage: string;
+}
+
+export interface UpdateOptionsSettingsAction
+  extends Action<"SET_OPTIONS_SETTINGS"> {
+  payload: OptionsSettings;
+}
+
+export type OptionsSettingsAction = UpdateOptionsSettingsAction;
+
+export type OptionsSettingsRoot = {
+  optionsSettings: OptionsState;
 };

@@ -3,6 +3,7 @@ import { RefObject, useEffect, useState } from "react";
 import { useHelper } from "./useHelper";
 import { updateGameSettings } from "../store/actions";
 import { settingsHelper } from "../utils/settingsHelper";
+import { useTranslation } from "react-i18next";
 
 interface Args {
   (ulRef: RefObject<HTMLUListElement>, activeElement: string): void;
@@ -11,6 +12,7 @@ interface Args {
 export const useSaveSettings: Args = (ulRef) => {
   const { dispatch, gameSettings, filterActiveElement } = useHelper();
   const [settings, setSettings] = useState({ ...gameSettings });
+  const { t } = useTranslation();
 
   useEffect(() => {
     const { categories, header, activeElementText, limitHeader } =
@@ -20,9 +22,9 @@ export const useSaveSettings: Args = (ulRef) => {
       setSettings((prevSettings: Settings) => ({
         ...prevSettings,
         limitHeader: limitHeader!,
-        limitFooter: limitHeader === "None" ? "" : activeElementText!,
+        limitFooter: limitHeader === t("None") ? "" : activeElementText!,
       }));
     }
     dispatch(updateGameSettings(settings));
-  }, [filterActiveElement, ulRef, settings, dispatch]);
+  }, [filterActiveElement, ulRef, settings, dispatch, t]);
 };

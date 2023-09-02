@@ -15,6 +15,9 @@ import {
   StatsRoot,
   Stats,
   StatsAction,
+  OptionsSettingsRoot,
+  OptionsSettings,
+  OptionsSettingsAction,
 } from "../store/types";
 import { Dispatch } from "@reduxjs/toolkit";
 import { useCallback } from "react";
@@ -25,6 +28,7 @@ export type DispatchActions = Dispatch<
   | PauseSettingsAction
   | CounterAction
   | StatsAction
+  | OptionsSettingsAction
 >;
 
 export interface HelperResult {
@@ -34,6 +38,7 @@ export interface HelperResult {
   pauseSettings: PauseSettings;
   counter: Counter;
   stats: Stats;
+  options: OptionsSettings;
   filterActiveElement?: (liList: Element[]) => Element | undefined;
 }
 
@@ -46,6 +51,7 @@ export const useHelper = (): HelperResult => {
   );
   const counter = useSelector((state: CounterRoot) => state.counter.counters);
   const stats = useSelector((state: StatsRoot) => state.stats.stats);
+  const options = useSelector((state: OptionsSettingsRoot) => state.optionsSettings.optionsSettings);
 
   const filterActiveElement = useCallback((liList: Element[]) => {
     return liList.find((el) => el.classList.contains("active"));
@@ -58,6 +64,7 @@ export const useHelper = (): HelperResult => {
     pauseSettings,
     counter,
     stats,
+    options,
     filterActiveElement,
   };
 };

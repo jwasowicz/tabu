@@ -5,7 +5,7 @@ import {
   setStats,
   updateGameSettings,
 } from "../store/actions";
-import data from "../api/categories.json";
+import data from "../api/categoriesGB.json";
 import { HelperResult } from "../hooks/useHelper";
 
 export const resetSettings = ({

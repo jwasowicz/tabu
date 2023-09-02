@@ -4,27 +4,30 @@ import ReportProblemIcon from "@mui/icons-material/ReportProblem";
 import Popup from "./Popup/Popup";
 import "./styles.css";
 import { useHelper } from "../../hooks/useHelper";
-
+import { useTranslation } from "react-i18next";
 const PauseScreen = () => {
   const {
     pauseSettings: { openedPopup },
   } = useHelper();
+
+  const { t } = useTranslation();
+
 
   return (
     <div className="pause-screen">
       <PauseScreenButton
         open={true}
         location="/end-screen"
-        text="Finish Game"
+        text={t("Finish game")}
       />
       <PauseScreenText color="white" />
-      <PauseScreenButton location="" margin={true} text="Rules" />
+      <PauseScreenButton location="" margin={true} text={t("Rules")} />
       <PauseScreenButton
         location=""
-        text="Report this word"
+        text={t("Report this word")}
         icon={ReportProblemIcon}
       />
-      <PauseScreenButton open={true} location="/" text="Exit to menu" />
+      <PauseScreenButton open={true} location="/" text={t("Exit to menu")} />
 
       {openedPopup && <Popup />}
     </div>

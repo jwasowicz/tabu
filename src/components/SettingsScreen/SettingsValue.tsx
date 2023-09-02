@@ -6,6 +6,7 @@ import { useSaveSettings } from "../../hooks/useSaveSettings";
 import { useHelper } from "../../hooks/useHelper";
 import { setRoundTime } from "../../store/actions";
 import { settingsHelper } from "../../utils/settingsHelper";
+import { useTranslation } from "react-i18next";
 
 interface SettingsValueProps {
   setCategory?: Dispatch<SetStateAction<string>>;
@@ -23,6 +24,7 @@ const SettingsValue: FC<SettingsValueProps> = ({
   headerName,
 }): JSX.Element => {
   const listRef = useRef<HTMLUListElement>(null);
+  const { t } = useTranslation();
 
   const { dispatch, roundTime, filterActiveElement } = useHelper();
 
@@ -32,21 +34,21 @@ const SettingsValue: FC<SettingsValueProps> = ({
   );
 
   const handleClick = (e: MouseEvent<HTMLLIElement>) => {
-    const categories = ["Rounds", "Points", "None"];
+    const categories = [t("Rounds"), t("Points"), t("None")];
     const clickedElement = e.currentTarget;
 
     if (categories.includes(clickedElement.textContent ?? "") && setCategory) {
       setCategory(clickedElement.textContent ?? "");
     }
 
-    if (header === "Round Time") {
+    if (header === t("Round Time")) {
       dispatch(
         setRoundTime({
           ...roundTime,
           "Round Time": clickedElement.textContent!,
         })
       );
-    } else if (header === "Skip Limit") {
+    } else if (header === t("Skip Limit")) {
       dispatch(
         setRoundTime({
           ...roundTime,
@@ -71,7 +73,7 @@ const SettingsValue: FC<SettingsValueProps> = ({
           style={{ transform: element === "∞" ? "scale(1.7)" : "" }}
           key={index}
         >
-          {headerName === "Round Time"
+          {headerName === t("Round Time")
             ? secondsToMinutes(Number(element), false)
             : element}
         </li>

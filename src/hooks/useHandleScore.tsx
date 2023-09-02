@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { setCounter, setPauseSettings } from "../store/actions";
 import { useHelper } from "./useHelper";
+import { useTranslation } from "react-i18next";
 
 export const useHandleScore = () => {
   const { gameSettings, counter, dispatch, pauseSettings } = useHelper();
@@ -8,6 +9,8 @@ export const useHandleScore = () => {
   const { roundCounter, redTeamCounter, blueTeamCounter } = counter;
 
   const navigate = useNavigate();
+
+  const { t } = useTranslation();
 
   const { limitFooter: limitValue, limitHeader } = gameSettings;
 
@@ -39,9 +42,9 @@ export const useHandleScore = () => {
   };
 
   switch (limitHeader) {
-    case "Points":
+    case t("Points"):
       return handlePoints();
-    case "Rounds":
+    case t("Rounds"):
       return handleRounds();
   }
 };

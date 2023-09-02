@@ -4,6 +4,7 @@ import EndScreenInfoContainer from "./EndScreenInfoContainer";
 import EndScreenScore from "./EndScreenScore";
 import EndScreenSkipContainer from "./EndScreenSkipContainer";
 import EndScreenTitle from "./EndScreenTitle";
+import { useTranslation } from "react-i18next";
 
 const EndScreenCardContainer = () => {
   const {
@@ -18,6 +19,8 @@ const EndScreenCardContainer = () => {
       blueTimesArr,
     },
   } = useHelper();
+
+  const { t } = useTranslation();
 
   const calculateTimesAndReturnSmallest = (array: string[]) => {
     const calculatedArray = array
@@ -41,14 +44,14 @@ const EndScreenCardContainer = () => {
       <EndScreenScore />
       <EndScreenSkipContainer />
       <EndScreenInfoContainer
-        infoHeader="Total time"
+        infoHeader={t("Total time")}
         infoContent={[
           secondsToMinutes(redTimer, true),
           secondsToMinutes(blueTimer, true),
         ]}
       />
       <EndScreenInfoContainer
-        infoHeader="Best time per card"
+        infoHeader={t("Best time per card")}
         infoContent={[
           calculateTimesAndReturnSmallest(redTimesArr),
           calculateTimesAndReturnSmallest(blueTimesArr),
@@ -56,7 +59,7 @@ const EndScreenCardContainer = () => {
       />
       <EndScreenInfoContainer
         active={true}
-        infoHeader="Efficiency"
+        infoHeader={t("Efficiency")}
         infoContent={[
           `${(isNaN(counterRedPlus / (counterRedPlus + counterRedMinus))
             ? 0

@@ -1,8 +1,12 @@
+import { TFunction } from "i18next";
+
+
 interface Args {
   redCounter: number;
   blueCounter: number;
   redTimer: number;
   blueTimer: number;
+  t: TFunction<"translation", undefined>
 }
 
 export const checkWonTeam = ({
@@ -10,18 +14,19 @@ export const checkWonTeam = ({
   blueCounter,
   redTimer,
   blueTimer,
+  t
 }: Args) => {
   if (redCounter === blueCounter) {
     if (redTimer === blueTimer) {
-      return "Draw";
+      return t("Draw");
     } else if (redTimer > blueTimer) {
-      return "Blue";
+      return t("Blue");
     } else if (blueTimer > redTimer) {
-      return "Red";
+      return t("Red");
     }
   } else if (redCounter > blueCounter) {
-    return "Red";
+    return t("Red");
   } else if (blueCounter > redCounter) {
-    return "Blue";
+    return t("Blue");
   }
 };

@@ -14,7 +14,7 @@ interface Props {
 }
 
 const GameButton: FC<Props> = ({ icon, action, skipButton }) => {
-  const { counter, dispatch, stats} = useHelper();
+  const { counter, dispatch, stats, options: {cardsLanguage}} = useHelper();
 
   const {
     disabledBlue,
@@ -26,7 +26,7 @@ const GameButton: FC<Props> = ({ icon, action, skipButton }) => {
   useHandleDisabled();
 
   const handleClick = () => {
-    switchAction({stats, counter, dispatch, action});
+    switchAction({stats, counter, dispatch, action, cardsLanguage});
   };
 
   return (

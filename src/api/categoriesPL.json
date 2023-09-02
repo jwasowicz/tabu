@@ -1,0 +1,616 @@
+{
+    "mainCategories": [
+      {
+        "headerName": "Dom",
+        "categories": [
+          "Salon",
+          "Kuchnia",
+          "Sypialnia",
+          "Łazienka",
+          "Ogród"
+        ]
+      },
+      {
+        "headerName": "Geografia",
+        "categories": [
+          "Ameryka",
+          "Europa",
+          "Afryka",
+          "Azja",
+          "Australia"
+        ]
+      },
+      {
+        "headerName": "Święta Bożego Narodzenia",
+        "categories": [
+          "Choinka",
+          "Prezenty",
+          "Święty Mikołaj",
+          "Śnieg",
+          "Wigilia"
+        ]
+      },
+      {
+        "headerName": "Morze",
+        "categories": [
+          "Ocean",
+          "Plaża",
+          "Fale",
+          "Woda",
+          "Rafa koralowa"
+        ]
+      },
+      {
+        "headerName": "Góry",
+        "categories": [
+          "Alpy",
+          "Himalaje",
+          "Andy",
+          "Szczyt",
+          "Wspinaczka"
+        ]
+      },
+      {
+        "headerName": "Lato",
+        "categories": [
+          "Słońce",
+          "Wakacje",
+          "Upał",
+          "Relaks",
+          "Plaża"
+        ]
+      },
+      {
+        "headerName": "Las",
+        "categories": [
+          "Drzewa",
+          "Zarośla",
+          "Ścieżka",
+          "Zwierzęta",
+          "Liście"
+        ]
+      },
+      {
+        "headerName": "Dolina",
+        "categories": [
+          "Kanion",
+          "Natura",
+          "Strumień",
+          "Krajobraz",
+          "Dzikie kwiaty"
+        ]
+      },
+      {
+        "headerName": "Wyspa",
+        "categories": [
+          "Plaża",
+          "Raj",
+          "Egzotyczne",
+          "Kokosy",
+          "Podróż"
+        ]
+      },
+      {
+        "headerName": "Zimno",
+        "categories": [
+          "Mróz",
+          "Śnieg",
+          "Mroźny wiatr",
+          "Mrożenie",
+          "Zamrożone jezioro"
+        ]
+      },
+      {
+        "headerName": "Mieszkanie",
+        "categories": [
+          "Najemcy",
+          "Wynajem",
+          "Współlokatorzy",
+          "Dekoracje",
+          "Sąsiedzi"
+        ]
+      },
+      {
+        "headerName": "Miasto",
+        "categories": [
+          "Wieżowce",
+          "Tłum",
+          "Ruch uliczny",
+          "Lampy uliczne",
+          "Metro"
+        ]
+      },
+      {
+        "headerName": "Pustynia",
+        "categories": [
+          "Piasek",
+          "Oaza",
+          "Formacje skalne",
+          "Kaktusy",
+          "Słońce"
+        ]
+      },
+      {
+        "headerName": "Wioska",
+        "categories": [
+          "Łąki",
+          "Krowy",
+          "Chata",
+          "Spokój",
+          "Zieleń"
+        ]
+      },
+      {
+        "headerName": "Szczyt",
+        "categories": [
+          "Wspinaczka",
+          "Panorama",
+          "Horyzont",
+          "Widok",
+          "Góry"
+        ]
+      },
+      {
+        "headerName": "Księżyc",
+        "categories": [
+          "Noc",
+          "Światło księżyca",
+          "Pełnia księżyca",
+          "Kosmos",
+          "Nieboskłon nocą"
+        ]
+      },
+      {
+        "headerName": "Plaża",
+        "categories": [
+          "Piasek",
+          "Morze",
+          "Słońce",
+          "Pływanie",
+          "Leżak"
+        ]
+      },
+      {
+        "headerName": "Rafa koralowa",
+        "categories": [
+          "Podwodna fauna",
+          "Kolorowe ryby",
+          "Nurkowanie",
+          "Podwodna przygoda",
+          "Ocean"
+        ]
+      },
+      {
+        "headerName": "Góry",
+        "categories": [
+          "Alpy",
+          "Himalaje",
+          "Andy",
+          "Szczyt",
+          "Wspinaczka"
+        ]
+      },
+      {
+        "headerName": "Ciepło",
+        "categories": [
+          "Słońce",
+          "Gorące powietrze",
+          "Klimat",
+          "Relaks",
+          "Opalanie się"
+        ]
+      },
+      {
+        "headerName": "Opady",
+        "categories": [
+          "Deszcz",
+          "Śnieg",
+          "Grad",
+          "Deszcz ze śniegiem",
+          "Parasol"
+        ]
+      },
+      {
+        "headerName": "Zwierzęta",
+        "categories": [
+          "Dzikie",
+          "Domowe",
+          "Zoo",
+          "Ptaki",
+          "Zoo"
+        ]
+      },
+      {
+        "headerName": "Krajobraz",
+        "categories": [
+          "Natura",
+          "Piękno",
+          "Malowniczość",
+          "Zieleń",
+          "Relaks"
+        ]
+      },
+      {
+        "headerName": "Tradycja",
+        "categories": [
+          "Kultura",
+          "Rytuały",
+          "Przesądy",
+          "Dziedzictwo",
+          "Pokolenia"
+        ]
+      },
+      {
+        "headerName": "Święta",
+        "categories": [
+          "Rodzina",
+          "Prezenty",
+          "Wigilia",
+          "Tradycja",
+          "Radość"
+        ]
+      },
+      {
+        "headerName": "Dekoracje",
+        "categories": [
+          "Przygotowania",
+          "Zdobienia",
+          "Piękno",
+          "Styl",
+          "Kreatywność"
+        ]
+      },
+      {
+        "headerName": "Podróże",
+        "categories": [
+          "Eksploracja",
+          "Przygoda",
+          "Nowe miejsca",
+          "Mapa",
+          "Kultura"
+        ]
+      },
+      {
+        "headerName": "Kultura",
+        "categories": [
+          "Sztuka",
+          "Muzyka",
+          "Teatr",
+          "Literatura",
+          "Film"
+        ]
+      },
+      {
+        "headerName": "Historia",
+        "categories": [
+          "Przeszłe epoki",
+          "Wydarzenia",
+          "Pamięć",
+          "Dziedzictwo",
+          "Zabytki"
+        ]
+      },
+      {
+        "headerName": "Natura",
+        "categories": [
+          "Piękno",
+          "Środowisko",
+          "Ekosystem",
+          "Rośliny",
+          "Zwierzęta"
+        ]
+      },
+      {
+        "headerName": "Podróże",
+        "categories": [
+          "Eksploracja",
+          "Przygoda",
+          "Nowe miejsca",
+          "Mapa",
+          "Kultura"
+        ]
+      },
+      {
+        "headerName": "Krajobraz",
+        "categories": [
+          "Natura",
+          "Piękno",
+          "Zieleń",
+          "Relaks",
+          "Urokliwe miejsce"
+        ]
+      },
+      {
+        "headerName": "Woda",
+        "categories": [
+          "Ocean",
+          "Morze",
+          "Rzeka",
+          "Jezioro",
+          "Basen"
+        ]
+      },
+      {
+        "headerName": "Rozrywka",
+        "categories": [
+          "Gry",
+          "Film",
+          "Muzyka",
+          "Przyjemność",
+          "Relaks"
+        ]
+      },
+      {
+        "headerName": "Eksploracja",
+        "categories": [
+          "Odkrycie",
+          "Przygoda",
+          "Nowe miejsca",
+          "Mapa",
+          "Podróż"
+        ]
+      },
+      {
+        "headerName": "Podróże",
+        "categories": [
+          "Kultura",
+          "Eksploracja",
+          "Przygoda",
+          "Odkrycie",
+          "Nowe miejsca"
+        ]
+      },
+      {
+        "headerName": "Kultura",
+        "categories": [
+          "Muzyka",
+          "Sztuka",
+          "Film",
+          "Teatr",
+          "Literatura"
+        ]
+      },
+      {
+        "headerName": "Historia",
+        "categories": [
+          "Wydarzenia",
+          "Przeszłe epoki",
+          "Pamięć",
+          "Dziedzictwo",
+          "Zabytki"
+        ]
+      },
+      {
+        "headerName": "Natura",
+        "categories": [
+          "Piękno",
+          "Środowisko",
+          "Ekosystem",
+          "Rośliny",
+          "Zwierzęta"
+        ]
+      },
+      {
+        "headerName": "Podróże",
+        "categories": [
+          "Kultura",
+          "Eksploracja",
+          "Przygoda",
+          "Nowe miejsca",
+          "Odkrycie"
+        ]
+      },
+      {
+        "headerName": "Sport",
+        "categories": [
+          "Aktywność fizyczna",
+          "Zawody",
+          "Zdrowie",
+          "Ruch",
+          "Rywalizacja"
+        ]
+      },
+      {
+        "headerName": "Kulinarne",
+        "categories": [
+          "Gotowanie",
+          "Przepisy",
+          "Smak",
+          "Restauracja",
+          "Szef kuchni"
+        ]
+      },
+      {
+        "headerName": "Technologia",
+        "categories": [
+          "Innowacje",
+          "Postęp",
+          "Gadżety",
+          "Komputery",
+          "Przemysł"
+        ]
+      },
+      {
+        "headerName": "Nauka",
+        "categories": [
+          "Badania",
+          "Odkrycia",
+          "Eksperymenty",
+          "Wiedza",
+          "Laboratorium"
+        ]
+      },
+      {
+        "headerName": "Rozrywka",
+        "categories": [
+          "Gry",
+          "Muzyka",
+          "Film",
+          "Przyjemność",
+          "Relaks"
+        ]
+      },
+      {
+        "headerName": "Natura",
+        "categories": [
+          "Rośliny",
+          "Zwierzęta",
+          "Ekosystem",
+          "Równowaga",
+          "Bioróżnorodność"
+        ]
+      },
+      {
+        "headerName": "Kosmos",
+        "categories": [
+          "Gwiazdy",
+          "Planety",
+          "Księżyc",
+          "Teleskop",
+          "Wielki Wybuch"
+        ]
+      },
+      {
+        "headerName": "Literatura",
+        "categories": [
+          "Książki",
+          "Powiastki",
+          "Poezja",
+          "Literatura",
+          "Czytanie"
+        ]
+      },
+      {
+        "headerName": "Film",
+        "categories": [
+          "Kino",
+          "Aktorzy",
+          "Reżyser",
+          "Scenariusz",
+          "Premiera"
+        ]
+      },
+      {
+        "headerName": "Muzyka",
+        "categories": [
+          "Melodia",
+          "Instrumenty",
+          "Koncerty",
+          "Wykonawcy",
+          "Rytm"
+        ]
+      },
+      {
+        "headerName": "Sztuka",
+        "categories": [
+          "Malarstwo",
+          "Rzeźba",
+          "Wystawy",
+          "Kreatywność",
+          "Inspiracja"
+        ]
+      },
+      {
+        "headerName": "Podróże",
+        "categories": [
+          "Eksploracja",
+          "Przygoda",
+          "Nowe miejsca",
+          "Kultura",
+          "Odkrycie"
+        ]
+      },
+      {
+        "headerName": "Podróże",
+        "categories": [
+          "Kultura",
+          "Eksploracja",
+          "Przygoda",
+          "Nowe miejsca",
+          "Odkrycie"
+        ]
+      },
+      {
+        "headerName": "Kultura",
+        "categories": [
+          "Film",
+          "Muzyka",
+          "Sztuka",
+          "Literatura",
+          "Teatr"
+        ]
+      },
+      {
+        "headerName": "Historia",
+        "categories": [
+          "Wydarzenia",
+          "Przeszłe epoki",
+          "Pamięć",
+          "Dziedzictwo",
+          "Zabytki"
+        ]
+      },
+      {
+        "headerName": "Natura",
+        "categories": [
+          "Piękno",
+          "Środowisko",
+          "Ekosystem",
+          "Rośliny",
+          "Zwierzęta"
+        ]
+      },
+      {
+        "headerName": "Przygoda",
+        "categories": [
+          "Eksploracja",
+          "Dreszczyk emocji",
+          "Podróż",
+          "Odkrycie",
+          "Poszukiwanie"
+        ]
+      },
+      {
+        "headerName": "Technologia",
+        "categories": [
+          "Innowacje",
+          "Cyfrowe",
+          "Urządzenia",
+          "Postęp",
+          "Automatyzacja"
+        ]
+      },
+      {
+        "headerName": "Miłość",
+        "categories": [
+          "Romans",
+          "Uczucia",
+          "Relacje",
+          "Łączność",
+          "Serdeczny"
+        ]
+      },
+      {
+        "headerName": "Zdrowie",
+        "categories": [
+          "Dobrostan",
+          "Fitness",
+          "Odżywianie",
+          "Balans",
+          "Dobrostan"
+        ]
+      },
+      {
+        "headerName": "Edukacja",
+        "categories": [
+          "Nauka",
+          "Wiedza",
+          "Szkoła",
+          "Rozwój",
+          "Intelekt"
+        ]
+      }
+      
+    ]
+  }
+  

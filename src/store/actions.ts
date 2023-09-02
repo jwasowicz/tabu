@@ -9,6 +9,8 @@ import {
   UpdateCounterAction,
   Stats,
   UpdateStatsAction,
+  OptionsSettings,
+  UpdateOptionsSettingsAction,
 } from "./types";
 
 export const updateGameSettings = (
@@ -49,3 +51,10 @@ export const setStats = (stats: Stats): UpdateStatsAction => {
     payload: stats,
   };
 };
+
+export const setOptionsSettings = (options: OptionsSettings): UpdateOptionsSettingsAction => {
+  return {
+    type: "SET_OPTIONS_SETTINGS",
+    payload: options
+  }
+}
