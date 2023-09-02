@@ -24,7 +24,7 @@ const RoundTimeProgressBar = () => {
             return prevWidth + 100 / timeToSeconds(timeRound);
           }
         });
-      }, 975);
+      }, 1000);
 
       return () => clearInterval(timer);
     }
