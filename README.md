@@ -11,7 +11,7 @@ Typescript + React + Redux
     - Create components for each of start icons
     - Add animations and improve existed
     - Create a component that clearly explains the rules of the game
-    - ~~ Add ability to change interface language and cards ~~
+    - ~~Add ability to change interface language and cards~~
     - Add more cards and categories
 
 ## Netlify:
