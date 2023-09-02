@@ -6,13 +6,13 @@ Typescript + React + Redux
 
 ## What I'm planning to add:
 
-    - Dynamic data (cards will not be repeated, the user will be able to add their own categories)
-    - Add sound effects
-    - Create components for each of start icons
-    - Add animations and improve existed
-    - Create a component that clearly explains the rules of the game
-    - Add ability to change interface language and cards
-    - Add more cards and categories
+    - Dynamic data (cards will not be repeated, the user will be able to add their own categories) ❌
+    - Add sound effects ❌
+    - Create components for each of start icons ❌
+    - Add animations and improve existed ❌
+    - Create a component that clearly explains the rules of the game ❌
+    - Add ability to change interface language and cards ✅
+    - Add more cards and categories ❌
 
 ## Netlify:
 ### Link:
