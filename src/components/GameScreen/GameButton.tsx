@@ -6,6 +6,10 @@ import { useHelper } from "../../hooks/useHelper";
 import { useHandleScore } from "../../hooks/useHandleScore";
 import { useHandleDisabled } from "../../hooks/useHandleDisabled";
 import { switchAction } from "../../utils/switchAction";
+import useSound from "use-sound";
+const incrementSound = require("../../assets/sounds/increment.mp3");
+const decrementSound = require("../../assets/sounds/decrement.mp3");
+const skipSound = require("../../assets/sounds/skip.mp3");
 
 interface Props {
   icon: OverridableComponent<SvgIconTypeMap>;
@@ -14,7 +18,25 @@ interface Props {
 }
 
 const GameButton: FC<Props> = ({ icon, action, skipButton }) => {
-  const { counter, dispatch, stats, options: {cardsLanguage}} = useHelper();
+  const { counter, dispatch, stats, options: {cardsLanguage, soundsOptionChecked}} = useHelper();
+  const [playIncrement] = useSound(incrementSound);
+  const [playDecrement] = useSound(decrementSound);
+  const [playSkip] = useSound(skipSound)
+
+  const switchAudio = () => {
+
+    switch(action) {
+      case "increment":
+        return playIncrement();
+      case "decrement":
+        return playDecrement();
+      case "skip":
+        return playSkip();
+      default:
+        return;
+    }
+
+  }
 
   const {
     disabledBlue,
@@ -26,6 +48,8 @@ const GameButton: FC<Props> = ({ icon, action, skipButton }) => {
   useHandleDisabled();
 
   const handleClick = () => {
+
+    soundsOptionChecked && switchAudio();
     switchAction({stats, counter, dispatch, action, cardsLanguage});
   };
 
