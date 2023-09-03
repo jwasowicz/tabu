@@ -7,16 +7,16 @@ import { setPauseSettings } from "../../../store/actions";
 const RoundPauseButton = () => {
   const { pauseSettings, dispatch } = useHelper();
 
-  const { gamePause } = pauseSettings;
+  const { gamePause, disabledGamePause } = pauseSettings;
 
   const handleClick = () => {
     dispatch(setPauseSettings({ ...pauseSettings, gamePause: !gamePause }));
   };
 
   return (
-    <div onClick={handleClick} className="round_container__button">
+    <button disabled={disabledGamePause} onClick={handleClick} className="round_container__button">
       <Icon icon={gamePause ? PlayArrowIcon : PauseIcon} />
-    </div>
+    </button>
   );
 };
 
