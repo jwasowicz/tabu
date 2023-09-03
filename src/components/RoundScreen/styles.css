@@ -8,8 +8,6 @@
   position: relative;
   overflow: hidden;
   font-family: "Noto Sans", sans-serif;
-
-  
 }
 
 .round-container__header {
@@ -110,7 +108,6 @@
   margin: auto 0;
   color: white;
   font-size: 0.9rem;
-
 }
 
 .round-content__h1 {
@@ -180,13 +177,9 @@ a:has(.round-content__button) {
 }
 
 @media screen and (max-width: 400px) {
-
   .round_section-bottom__progress {
     margin: 0 15vw 0 15vw;
   }
-
-
-
 }
 
 @media screen and (max-width: 350px) {
