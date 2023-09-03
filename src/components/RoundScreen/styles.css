@@ -184,4 +184,13 @@ a:has(.round-content__button) {
   .round_section-bottom__progress {
     margin: 0 15vw 0 15vw;
   }
+
+
+
+}
+
+@media screen and (max-width: 350px) {
+  .round_container__button {
+    width: 25%;
+  }
 }

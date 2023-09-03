@@ -28,7 +28,7 @@
 }
 
 .pause-screen__info {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -189,6 +189,10 @@
   .buttons-container {
     gap: 2rem;
   }
+}
+
+.react-switch-bg {
+  box-shadow: inset 2px -2px 9px 0px rgba(130, 130, 130, 1);
 }
 
 
