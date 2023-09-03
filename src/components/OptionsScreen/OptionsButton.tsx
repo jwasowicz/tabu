@@ -111,6 +111,7 @@ const OptionsButton: FC<Props> = ({ text, options }) => {
                 onHandleColor="#FB5629"
                 height={35}
                 width={70}
+                handleDiameter={36}
                 borderRadius={10}
                 uncheckedIcon={true}
                 boxShadow="0 4px 8px -2px #42445a"
