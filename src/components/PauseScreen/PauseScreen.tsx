@@ -1,6 +1,5 @@
 import PauseScreenButton from "./PauseScreenButton";
 import PauseScreenText from "./PauseScreenText";
-import ReportProblemIcon from "@mui/icons-material/ReportProblem";
 import Popup from "./Popup/Popup";
 import "./styles.css";
 import { useHelper } from "../../hooks/useHelper";
@@ -24,8 +23,8 @@ const PauseScreen = () => {
       <PauseScreenButton location="" margin={true} text={t("Rules")} />
       <PauseScreenButton
         location=""
-        text={t("Report this word")}
-        icon={ReportProblemIcon}
+        text={t("Sounds")}
+        type="switch"
       />
       <PauseScreenButton open={true} location="/" text={t("Exit to menu")} />
 
