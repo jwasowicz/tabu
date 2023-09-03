@@ -30,6 +30,7 @@ export const useHandleTime = ({ time }: Args) => {
             ...pauseSettings,
             openedGameScreen: false,
             gamePause: false,
+            disabledGamePause: false,
           })
         );
         dispatch(
@@ -46,6 +47,7 @@ export const useHandleTime = ({ time }: Args) => {
             ...pauseSettings,
             openedGameScreen: false,
             gamePause: false,
+            disabledGamePause: false,
           })
         );
         dispatch(
