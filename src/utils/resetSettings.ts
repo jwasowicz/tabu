@@ -26,6 +26,7 @@ export const resetSettings = ({
       openedGameScreen: false,
       animationStart: false,
       location: "",
+      disabledGamePause: false
     })
   );
   dispatch(
