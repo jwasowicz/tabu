@@ -1,5 +1,5 @@
 # eTABU Clone
-eTABU is a social game in which two teams alternate guessing passwords transmitted by a player who cannot use forbidden words or gestures. The original game is only available for phones, so I wanted to take on this challenge and created a project that is playable on all devices!
+eTABU is a social game in which two teams alternate guessing passwords transmitted by a player who cannot use forbidden words or gestures. The original game is only available for phones, so I wanted to take on this challenge and create a project that is playable on all devices!
 
 ## Technologies I've used:
 Typescript + React + Redux
@@ -19,7 +19,7 @@ Typescript + React + Redux
 https://etabu.netlify.app/
 ## Installation:
 ```
-git clone https://github.com/Wasiak1234/etabu
+git clone https://github.com/jwasowicz/etabu
 cd etabuproject
 npm install
 npm start
