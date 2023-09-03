@@ -11,6 +11,7 @@ const initialState: PauseState = {
     openedGameScreen: false,
     animationStart: false,
     location: "",
+    disabledGamePause: false,
   },
 
 };
