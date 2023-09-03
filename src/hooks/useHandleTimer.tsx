@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useRef } from "react";
 import { useHelper } from "./useHelper";
-import { setStats } from "../store/actions";
+import { setPauseSettings, setStats } from "../store/actions";
 import { timeToSeconds } from "../utils/timeConvert";
 import useSound from "use-sound";
 
@@ -17,6 +17,7 @@ export const useHandleTimer = ({ setTime }: Args) => {
     stats,
     counter: { activeCounter },
     roundTime,
+    options: {soundsOptionChecked}
   } = useHelper();
   const { redTimer, blueTimer } = stats;
   const { openedGameScreen, gamePause } = pauseSettings;
@@ -39,7 +40,8 @@ export const useHandleTimer = ({ setTime }: Args) => {
             return 0;
           } else {
             if (prevTime === 6) {
-              playTimerSound();
+              soundsOptionChecked && playTimerSound();
+              dispatch(setPauseSettings({...pauseSettings, disabledGamePause: true}))
             }
 
             const updatedStats = {
@@ -60,9 +62,11 @@ export const useHandleTimer = ({ setTime }: Args) => {
     redTimer,
     blueTimer,
     dispatch,
+    pauseSettings,
     activeCounter,
     playTimerSound,
     timeRound,
+    soundsOptionChecked,
     setTime,
   ]);
 };
