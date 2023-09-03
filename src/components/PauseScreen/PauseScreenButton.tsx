@@ -1,15 +1,14 @@
 import { FC } from "react";
-import { OverridableComponent } from "@mui/material/OverridableComponent";
-import { SvgIconTypeMap } from "@mui/material";
 import "./styles.css";
-import Icon from "../../Icon";
 import { useHelper } from "../../hooks/useHelper";
-import { setPauseSettings } from "../../store/actions";
+import { setOptionsSettings, setPauseSettings } from "../../store/actions";
+import Switch from "react-switch";
+
 
 interface Props {
   text: string;
   margin?: boolean;
-  icon?: OverridableComponent<SvgIconTypeMap>;
+  type?: string;
   open?: boolean;
   location: string;
 }
@@ -17,11 +16,13 @@ interface Props {
 const PauseScreenButton: FC<Props> = ({
   text,
   margin,
-  icon,
+  type,
   open,
   location,
 }) => {
-  const { pauseSettings, dispatch } = useHelper();
+  const { pauseSettings, dispatch, options} = useHelper();
+
+  const {soundsOptionChecked} = options;
 
   const handleClick = () => {
     if (open) {
@@ -35,17 +36,39 @@ const PauseScreenButton: FC<Props> = ({
     }
   };
 
+  const handleSwitch = () => {
+    dispatch(setOptionsSettings({...options, soundsOptionChecked: !soundsOptionChecked}));
+  }
+
   return (
     <button
       onClick={handleClick}
       style={{
-        justifyContent: icon ? "space-between" : "center",
+        justifyContent: type === "switch" ? "space-between" : "center",
         marginTop: margin ? "1rem" : "",
+        padding: type === "switch" ? "1rem" : "",
       }}
       className="game-button"
     >
       {text}
-      {icon && <Icon icon={icon} />}
+      {type === "switch" && (
+        <Switch
+          offColor="#C0C0C0"
+          onColor="#C0C0C0"
+          offHandleColor="#666666"
+          onHandleColor="#FB5629"
+          height={38}
+          width={75}
+          handleDiameter={40}
+          borderRadius={10}
+          uncheckedIcon={true}
+          boxShadow="0 4px 8px -2px #42445a"
+          activeBoxShadow="0"
+          checkedIcon={true}
+          checked={soundsOptionChecked}
+          onChange={handleSwitch}
+        />
+      )}
     </button>
   );
 };
