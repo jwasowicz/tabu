@@ -51,6 +51,7 @@ export interface PauseSettings {
   openedGameScreen: boolean;
   animationStart: boolean;
   location: string;
+  disabledGamePause: boolean;
 }
 
 export interface UpdatePauseSettingsAction
