@@ -19,9 +19,9 @@ interface Props {
 
 const GameButton: FC<Props> = ({ icon, action, skipButton }) => {
   const { counter, dispatch, stats, options: {cardsLanguage, soundsOptionChecked}} = useHelper();
-  const [playIncrement] = useSound(incrementSound);
-  const [playDecrement] = useSound(decrementSound);
-  const [playSkip] = useSound(skipSound)
+  const [playIncrement] = useSound(incrementSound, {volume: 0.5});
+  const [playDecrement] = useSound(decrementSound, {volume: 0.5});
+  const [playSkip] = useSound(skipSound, {volume: 0.5})
 
   const switchAudio = () => {
 

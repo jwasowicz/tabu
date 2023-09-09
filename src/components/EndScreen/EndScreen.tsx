@@ -28,7 +28,7 @@ const EndScreen = () => {
     t,
   });
 
-  const [playEndScreenSounds] = useSound(endScreenSound);
+  const [playEndScreenSounds] = useSound(endScreenSound, {volume: 0.3});
 
   useEffect(() => {
     soundsOptionChecked && playEndScreenSounds();
