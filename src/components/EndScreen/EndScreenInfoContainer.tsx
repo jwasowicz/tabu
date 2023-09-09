@@ -32,8 +32,8 @@ const EndScreenInfoContainer: FC<Props> = ({
       >
         <InfoHeader infoHeader={infoHeader} />
         <InfoContent active={active} infoContent={infoContent} />
-      </div>
-      {active && (
+
+        {active && (
         <div className="info-container__progress-container">
           <InfoProgresBar
             team="red"
@@ -53,6 +53,8 @@ const EndScreenInfoContainer: FC<Props> = ({
           />
         </div>
       )}
+      </div>
+      
     </>
   );
 };
