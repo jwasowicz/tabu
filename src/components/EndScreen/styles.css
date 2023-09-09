@@ -78,7 +78,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  gap: 0.4rem;
   width: 100%;
 }
 
@@ -176,6 +176,14 @@
   border-top: 0 solid transparent;
 }
 
+.spinner {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+
+
 @media screen and (min-height: 650px) {
   .end-screen__card-container {
     height: 83vh;
@@ -217,7 +225,6 @@
 
   .info-container__progress-container {
     margin-bottom: 2rem;
-    gap: 1rem;
   }
 
   .end-screen__score {
@@ -249,5 +256,13 @@
 
   .info-container__content {
     margin-bottom: 0;
+  }
+}
+
+
+@media screen and (min-height: 700px) {
+  .info-container__progress-container {
+    margin-bottom: 0;
+    gap: 0;
   }
 }
