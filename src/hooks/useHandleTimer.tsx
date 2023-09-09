@@ -24,7 +24,7 @@ export const useHandleTimer = ({ setTime }: Args) => {
 
   const copyStatsRef = useRef(stats);
 
-  const [playTimerSound] = useSound(timerSound);
+  const [playTimerSound] = useSound(timerSound, {volume: 0.4});
 
   const timeRound = timeToSeconds(roundTime["Round Time"]);
 
