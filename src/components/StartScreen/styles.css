@@ -128,9 +128,14 @@ a:has(.game-container__button) {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .game-container__button {
       padding: 1.3rem;
+      font-size: 1.2rem;
+    }
+
+    .game-container__logo {
+      width: 70%;
     }
   }
   

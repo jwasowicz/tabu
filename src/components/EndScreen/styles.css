@@ -9,10 +9,6 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-.end-screen__spinners-container {
-  animation: rotateCircle infinite 20s linear;
-}
-
 .end-screen__card-container {
   display: flex;
   flex-direction: column;
@@ -243,8 +239,9 @@
 
     .end-screen__button {
         padding: 5vw;
+        font-size: 5vw;
 
-      }
+    }
 
   .space {
     margin: 0 25vw 0 25vw;
