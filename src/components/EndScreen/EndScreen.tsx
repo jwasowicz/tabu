@@ -8,6 +8,7 @@ import { useHelper } from "../../hooks/useHelper";
 import { useTranslation } from "react-i18next";
 import useSound from "use-sound";
 import { useEffect } from "react";
+import GameScreenBackground from "../GameScreen/GameScreenBackground";
 
 const endScreenSound = require("../../assets/sounds/endScreen.mp3");
 
@@ -28,35 +29,38 @@ const EndScreen = () => {
     t,
   });
 
-  const [playEndScreenSounds] = useSound(endScreenSound, {volume: 0.3});
+  const [playEndScreenSounds] = useSound(endScreenSound, { volume: 0.3 });
 
   useEffect(() => {
     soundsOptionChecked && playEndScreenSounds();
   }, [playEndScreenSounds, soundsOptionChecked]);
 
   return (
-    <div
-      style={{
-        background:
-          result === t("Red")
-            ? "#E85155"
-            : result === t("Draw")
-            ? "#50A8FD"
-            : "#50A8FD",
-      }}
-      className="end-screen__container"
-    >
-      {result === t("Draw") && <div className="trapezoid-red"></div>}
+    <>
+    <GameScreenBackground result={result?.toLowerCase()!}/>
+      <div
+        style={{
+          background:
+            result === t("Red")
+              ? "#E85155"
+              : result === t("Draw")
+              ? "#50A8FD"
+              : "#50A8FD",
+        }}
+        className="end-screen__container"
+      >
+        {result === t("Draw") && <div className="trapezoid-red"></div>}
 
-      <EndScreenCardContainer />
+        <EndScreenCardContainer />
 
-      <EndScreenSpinners />
+        <EndScreenSpinners />
 
-      <div className="end-screen__button-container">
-        <EndScreenButton text={t("Game over")} />
-        <EndScreenButton text={t("Rematch")} />
+        <div className="end-screen__button-container">
+          <EndScreenButton text={t("Game over")} />
+          <EndScreenButton text={t("Rematch")} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -5,6 +5,7 @@ import RoundContent from "./RoundContent/RoundContent";
 import RoundHeader from "./RoundHeader/RoundHeader";
 import "./styles.css";
 import { setCounter } from "../../store/actions";
+import GameScreenBackground from "../GameScreen/GameScreenBackground";
 
 const RoundScreen = () => {
   const { pauseSettings, counter, dispatch } = useHelper();
@@ -21,6 +22,7 @@ const RoundScreen = () => {
 
   return (
     <>
+      <GameScreenBackground result={activeCounter}/>
       <div
         style={{ background: activeCounter === "red" ? "#E85155" : "#50A8FD" }}
         className="round-container"
