@@ -19,7 +19,7 @@ Typescript + React + Redux
 https://tabu.netlify.app/
 ## Installation:
 ```
-git clone https://github.com/jwasowicz/etabu
+git clone https://github.com/jwasowicz/tabu
 cd etabuproject
 npm install
 npm start
