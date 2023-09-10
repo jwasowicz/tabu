@@ -20,7 +20,7 @@ https://tabu.netlify.app/
 ## Installation:
 ```
 git clone https://github.com/jwasowicz/tabu
-cd etabuproject
+cd tabu
 npm install
 npm start
 ```
