@@ -109,6 +109,13 @@
   stroke-width: 3;
 }
 
+.game-screen__overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+}
+
 @media screen and (max-width: 300px) {
   
   .game-screen__button {
@@ -141,6 +148,8 @@
 
 
 }
+
+
 
 @media screen and (max-width: 425px) {
   .game-screen__card {
