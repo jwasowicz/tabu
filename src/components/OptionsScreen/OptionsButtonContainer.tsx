@@ -23,7 +23,7 @@ const OptionsButtonContainer = () => {
       <OptionsButton text={t("Cards language")} options={{ type: "icon", icon: returnCardsLang(), cursor: 'default' }} />
       <OptionsButton text={t("Application language")} options={{ type: "icon", icon: returnInterfaceLang(), cursor: 'default'}} />
       <OptionsButton text={t("Send feedback")} options={{ type: "" , cursor: 'pointer'}} />
-      <OptionsButton text={t("Rate eTABU")} options={{ type: "", cursor: 'pointer'}} />
+      <OptionsButton text={t("Rate TABU")} options={{ type: "", cursor: 'pointer'}} />
     </div>
   );
 };
