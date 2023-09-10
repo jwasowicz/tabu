@@ -40,7 +40,8 @@ i18n.use(initReactI18next).init({
         "Best time per card": "Best time per card",
         "Efficiency": "Efficiency",
         "Game over": "Game over",
-        "Rematch": "Rematch"
+        "Rematch": "Rematch",
+        "Rate TABU": "Rate TABU"
 
 
       },
@@ -80,7 +81,8 @@ i18n.use(initReactI18next).init({
         "Best time per card": "Najlepszy czas hasła",
         "Efficiency": "Skuteczność",
         "Game over": "Koniec gry",
-        "Rematch": "Zagraj ponownie"
+        "Rematch": "Zagraj ponownie",
+        "Rate TABU": "Oceń TABU"
 
       },
     },
