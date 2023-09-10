@@ -3,10 +3,8 @@ import StartScreen from "./components/StartScreen/StartScreen";
 
 function App() {
   return (
-
-
     <div className="container">
-        <StartScreen />
+      <StartScreen />
     </div>
   );
 }
