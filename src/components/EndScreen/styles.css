@@ -258,11 +258,3 @@
     margin-bottom: 0;
   }
 }
-
-
-@media screen and (min-height: 700px) {
-  .info-container__progress-container {
-    margin-bottom: 0;
-    gap: 0;
-  }
-}
