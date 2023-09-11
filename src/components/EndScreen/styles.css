@@ -182,6 +182,9 @@
   position: absolute;
 }
 
+.round_section-bottom__h3 {
+  text-align: center;
+}
 
 
 @media screen and (min-height: 650px) {
