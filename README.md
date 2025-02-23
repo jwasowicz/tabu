@@ -1,6 +1,9 @@
 # TABU Game
 TABU is a social game in which two teams alternate guessing passwords transmitted by a player who cannot use forbidden words or gestures. The original game (eTABU) from which I took inspiration is only available for phones, so I wanted to take on this challenge and create an app that can be played on all devices!
 
+# Note
+The design is created mainly for mobile applications, but we can also use the application on the desktop.
+
 ## Technologies I've used:
 Typescript + React + Redux
 
